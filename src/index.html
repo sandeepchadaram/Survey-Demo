@@ -1,0 +1,107 @@
+<main>
+  <header>
+  <h1 id="title">FreeCodeCamp Survey</h1>
+    <p id ="description"> Thank you for the invaluable feedback</p>
+    </header>
+  <form id="survey-form">
+    <div>
+    <label id="name-label">Name:</label>
+      </div>
+    <div>
+    <input
+           type= "text"
+           name="name"
+           id="name"
+           class="ip"
+           placeholder="Please enter your name"
+           required>
+      </div>
+    <div>
+    <label id="email-label">Email:</label></div>
+    <div>
+    <input
+           type= "email"
+           name="Email"
+           id="email"
+           class ="ip"
+           placeholder="Please enter your email address"
+           required>
+      </div>
+    <div>
+    <label id="number-label">Age:</label></div>
+    <div>
+    <input
+           type= "number"
+           name="Age"
+           id="number"
+           class="ip"
+           placeholder="Please enter your age"
+           min = "10"
+           max = "100"
+           required>
+      </div>
+    <div>
+    <label id="Role-label">Which option best describes your role?</label></div>
+    <div>
+    <select
+           id = "dropdown"
+            name = "role"
+           required>
+      <option disabled selected value> Select current role</option>
+      <option value="student">Student</option>
+      <option value="Teacher">Teacher</option>
+      <option value="Professional">Professional</option>
+      <option value="other">Other</option>
+      </select>
+      </div>
+    <div id="recommend">
+        <legend>Would you recommend FreeCodeCamp to your friends?</legend>
+      </div>
+    <div class="recradio">
+        <input id="Definitely" type="radio" name="levels" value="Definitely" class="radio-btn" indefinitely checked>
+        <label for="Definitely">Definitely</label><br>
+        <input id="Maybe" type="radio" name="levels" value="Maybe" class="radio-btn">
+        <label for="Maybe">Maybe</label><br>
+        <input id="No" type="radio" name="levels" value="No" class="radio-btn">
+        <label for="No">No</label>
+      </div>
+    <div id="like">What do you like most about FreeCodeCamp?</div>
+    <div>
+      <label>
+        <input
+          name="like"
+          value="Challenges"
+          type="checkbox"
+          class="input-checkbox"
+        >Challenges</label><br>
+      <label>
+        <input
+               name="like"
+               value="Projects"
+               type="checkbox"
+               class="input-checkbox">Projects</label><br>
+      <label>
+        <input
+               name="like"
+               value="Community"
+               type="checkbox"
+               class="input-checkbox">Community</label><br>
+      <label>
+        <input
+               name="like"
+               value="Opensource"
+               type="checkbox"
+               class="input-checkbox">Open-source</label><br>
+    </div>
+    <div>Any comments or suggestions?</div>
+    <div>
+      <textarea
+                id="comments"
+                name="suggestions"
+                class="textarea"
+                placeholder="Enter your comments or suggestions here..."></textarea>
+    </div>
+    <div class="submit"><button type="submit" id="submit">Submit</button></div>
+  </form>
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
